@@ -1,0 +1,61 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    color: white;
+}
+
+.container {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #141e30;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.meter {
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.meter-fill {
+    height: 100%;
+    background: red;
+    border-radius: 10px;
+}
