@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 
-model = pickle.load(open("model/churn_model.pkl", "wb"))
+model = pickle.load(open("model/churn_model.pkl", "rb"))
 scaler = pickle.load(open("model/scaler.pkl", "rb"))
 
 gender_map = {"Male": 1, "Female": 0}
@@ -50,6 +50,7 @@ def predict():
 
     except Exception as e:
         return render_template("index.html", prediction = "Error in Prediction" )
-
     if __name__ == "__main__":
-        app.run()
+        port = int(os.environ.get("PORT", 5000))
+        app.run(host="0.0.0.0", port=port)
+    return None
